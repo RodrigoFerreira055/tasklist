@@ -1,0 +1,18 @@
+h1,h2{
+    color: #e57c7a;;
+}
+
+body{
+    background-color: #22028f;
+    color: #ffffff;
+    font-family: Tilt Neon;
+}
+
+.divNewTask{
+    display: flex;
+    padding: 5px;
+}
+
+.divNewTask > p{
+    padding-left: 5px;
+}
