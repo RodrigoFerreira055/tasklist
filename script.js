@@ -5,6 +5,7 @@ function saveTask(){
 
     const divNewTask = document.createElement('div');
     divNewTask.className = 'divNewTask';
+    divNewTask.id = 'marked';
 
     const mark = document.createElement('input');
     mark.type = 'checkbox';
@@ -19,26 +20,14 @@ function saveTask(){
 
 }
 
-function exclude(){
-    const remove = document.querySelector('.divNewTask')
-    console.log(remove)
 
-    const task = document.getElementsByTagName('p')
-    const mark = document.getElementsByTagName('input')
 
-    console.log(task)
-    console.log(mark.checked)
 
-    if (mark.checked === true){
-        remove.removeChild((task[task.length - 1]))
-        remove.removeChild((mark[mark.length - 1]))
-    } else{
-        console.log(mark)
-    }
-    
-
-}
-
+//ao clicar sobre a div da tarefa setar a classe
 function conclude(){
-
+    let marked = document.getElementsByClassName('divNewTask');
+    for (let index = 0; index < marked.length; index++) {
+        marked[index].classList.add('marked')
+        
+    }
 }

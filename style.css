@@ -16,3 +16,8 @@ body{
 .divNewTask > p{
     padding-left: 5px;
 }
+
+.marked{
+    color: #e57c7a;
+    text-decoration: line-through;
+}

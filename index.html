@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
-    <script src="script.js" defer></script>
+    
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,20 +18,21 @@
         <input type="text"  id="newTask" >
         <button type="submit" onclick="saveTask()" >Salvar</button>
     </section>
+
 <br><br>
+
     <section id="todo" >
         <h2>Tarefas</h2>
         
     </section>
+
 <br><br>
+
 <section>
-    <button id="conclude">Tarefa(s) Concluída(s)</button>
-    <button id="exclude" onclick="exclude()" >Excluir Tarefas</button>
+    <button id="conclude" onclick="conclude()">Tarefa(s) Concluída(s)</button>
 </section>
 
-<section id="done" >
-    <h2>Tarefas Concluídas</h2>
-</section>
 
+<script src="script.js" defer></script>
 </body>
 </html>
