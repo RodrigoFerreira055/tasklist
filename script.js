@@ -7,13 +7,10 @@ function saveTask(){
     divNewTask.className = 'divNewTask';
     divNewTask.id = 'marked';
 
-    const mark = document.createElement('input');
-    mark.type = 'checkbox';
     const createTask = document.createElement('p');
     createTask.innerText = task;
 
     toDo.appendChild(divNewTask)
-    divNewTask.appendChild(mark);
     divNewTask.appendChild(createTask);
     
     
@@ -26,7 +23,9 @@ function saveTask(){
 //ao clicar sobre a div da tarefa setar a classe
 function conclude(){
     let marked = document.getElementsByClassName('divNewTask');
+    console.log(marked)
     for (let index = 0; index < marked.length; index++) {
+        
         marked[index].classList.add('marked')
         
     }

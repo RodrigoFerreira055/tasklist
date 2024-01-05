@@ -8,29 +8,34 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    
+
 </head>
 <body>
-    <h1>Minha Lista de Tarefas</h1>
+    <div class="container">
+        <h1>Minha Lista de Tarefas</h1>
 
+        <section class="list" >
+            <!-- <label for="newTask">Nova Tarefa</label> -->
+            <input type="text"  id="newTask" placeholder="Nova Tarefa">
+            <button type="submit" onclick="saveTask()" >Salvar</button>
+        </section>
+    
+    <br><br>
+    
+        <section id="todo" >
+            <h2>Tarefas</h2>
+            
+        </section>
+    
+    <br><br>
+    
     <section>
-        <label for="newTask">Nova Tarefa</label>
-        <input type="text"  id="newTask" >
-        <button type="submit" onclick="saveTask()" >Salvar</button>
+        <button id="conclude" onclick="conclude()">Marcar Tarefa(s) Concluída(s)</button>
     </section>
-
-<br><br>
-
-    <section id="todo" >
-        <h2>Tarefas</h2>
-        
-    </section>
-
-<br><br>
-
-<section>
-    <button id="conclude" onclick="conclude()">Tarefa(s) Concluída(s)</button>
-</section>
+    </div>
+    
 
 
 <script src="script.js" defer></script>

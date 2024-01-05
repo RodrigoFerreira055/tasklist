@@ -2,15 +2,44 @@ h1,h2{
     color: #e57c7a;;
 }
 
+h1{
+    text-align: center;
+}
+
 body{
     background-color: #22028f;
     color: #ffffff;
-    font-family: Tilt Neon;
+    font-family: 'Playfair Display', serif;
 }
+
+.container{
+    margin: 20px;
+}
+
+.list{
+    text-align: center;
+}
+
+.list > input, .list > button{
+    text-align: center;
+    font-size: 30px;
+}
+
+.list > input{
+    width: 50%;
+    height: 50px;
+}
+
+.list > button{
+    
+    height: 55px;
+}
+
 
 .divNewTask{
     display: flex;
     padding: 5px;
+    font-size: 20px;
 }
 
 .divNewTask > p{
@@ -20,4 +49,5 @@ body{
 .marked{
     color: #e57c7a;
     text-decoration: line-through;
+    font-size: 15px;
 }
