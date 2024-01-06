@@ -6,8 +6,18 @@ h1{
     text-align: center;
 }
 
+input{
+    border: none;
+    
+}
+
+button{
+    background-color: #298D69;
+    border: 0;
+}
+
 body{
-    background-color: #22028f;
+    background-color: #121515;
     color: #ffffff;
     font-family: 'Playfair Display', serif;
 }
@@ -16,23 +26,31 @@ body{
     margin: 20px;
 }
 
+.topHeader{
+    font-size: 25px;
+}
+
 .list{
     text-align: center;
 }
 
-.list > input, .list > button{
+input, button{
+    font-family: 'Playfair Display';
     text-align: center;
     font-size: 30px;
+    cursor: pointer;
 }
 
-.list > input{
+input{
     width: 50%;
     height: 50px;
 }
 
-.list > button{
-    
-    height: 55px;
+button{
+    border: none;
+    height: 50px;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 

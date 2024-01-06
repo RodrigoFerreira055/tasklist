@@ -12,13 +12,16 @@
     
 
 </head>
-<body>
+<body onkeydown="setFocus()" onclick="setFocus()">
     <div class="container">
+
+        <header id="header" class="topHeader" ></header>
+
         <h1>Minha Lista de Tarefas</h1>
 
         <section class="list" >
             <!-- <label for="newTask">Nova Tarefa</label> -->
-            <input type="text"  id="newTask" placeholder="Nova Tarefa">
+            <input type="text"  id="newTask" placeholder="Nova Tarefa" onkeydown="KeyPress(event)">
             <button type="submit" onclick="saveTask()" >Salvar</button>
         </section>
     
@@ -26,7 +29,6 @@
     
         <section id="todo" >
             <h2>Tarefas</h2>
-            
         </section>
     
     <br><br>
